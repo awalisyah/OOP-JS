@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LuasKeliling</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1><center>Kalkulator</center></h1>
+	<p><center>Menghitung Luas dan Keliling Bangun Datar</center></p>
+	<!--SCRIPT-->
+	<script type="text/javascript">
+		function Persegi() {
+			var Sisipsg = prompt ("Masukkan Sisi : ");
+			if (Sisipsg == "" || Sisipsg == null) {
+					alert("Sisi sisinya jangan lupa diisi dulu yaa")
+				}
+			else {
+				//Rumus
+				var Luaspsg = (Number(Sisipsg)*Number(Sisipsg));
+				var Kelpsg = (Number(Sisipsg))*4;
+				
+				//Hasil
+				var Hasilpsg = alert("Luas = "+Luaspsg);
+				var Kel = alert("Keliling = "+Kelpsg);
+				}
+		}
+		function PersegiPanjang() {
+			var Panpp = prompt ("Masukkan Panjang : ");
+			var Lebpp = prompt ("Masukkan Lebar : ");
+			if (Panpp == "" || Panpp == null || Lebpp == "" || Lebpp == null) {
+					alert("Sisi sisinya jangan lupa diisi dulu yaa")
+				}
+			else {
+				//Rumus
+				var Luaspp = (Number(Panpp)*Number(Lebpp));
+				var Kelpp = 2*(Number(Panpp)+Number(Lebpp));
+				//Hasil
+				var Hasil = alert("Luas = "+Luaspp);
+				var Kel = alert("Keliling = "+Kelpp);
+				}
+		}
+		function Segitiga() {
+			var Alassg = prompt ("Masukkan Alas : ");
+			var Tgsg = prompt ("Masukkan Tinggi : ");
+			var Sisisg = prompt ("Masukkan Sisi : ");
+			if (Alassg == "" || Alassg == null || Tgsg == "" || Tgsg == null || Sisisg == "" || Sisisg == null) {
+					alert("Sisi sisinya jangan lupa diisi dulu yaa")
+				}
+			else {
+				//Rumus
+				var Luassg = (Number(Alassg)*Number(Tgsg))/2;
+				var Kelsg = (Number(Sisisg))*3;
+				//Hasil
+				var Hasil = alert("Luas = "+Luassg);
+				var Kel = alert("Keliling = "+Kelsg);
+				}
+		}
+		function Trapesium() {
+			var Atastp = prompt ("Masukan Sisi Atas :    ");
+			var Bawahtp = prompt ("Masukan Sisi Bawah :    ");
+			var Tgtp = prompt ("Masukan Tinggi :    ");
+			var Sisitp = prompt ("Masukan Sisi Miring :    ");
+			if (Atastp == "" || Atastp == null || Bawahtp == "" || Bawahtp == null ||
+				Tgtp == "" || Tgtp == null || Sisitp == "" || Sisitp == null) {
+					alert("Sisi sisinya jangan lupa diisi dulu yaa")
+				}
+			else {
+				//Rumus
+				var Luastp = (Number(Atastp)+Number(Bawahtp))/2*(Number(Tgtp));
+				var Keltp = (Number(Atastp)+Number(Bawahtp))+(Number(2)*Number(Sisitp));
+				//Hasil
+				var Hasil = alert("Luas = "+Luastp);
+				var Kel = alert("Keliling = "+Keltp);
+				}
+		}
+		function Layang() {
+			var D1 = prompt ("Masukan Sisi D1 :    ");
+			var D2 = prompt ("Masukan Sisi D2 :    ");
+			var Sisilya = prompt ("Masukan Sisi A :    ");
+			var Sisilyb = prompt ("Masukan Sisi B :    ");
+			if (D1 == "" || D1 == null || D2 == "" || D2 == null ||
+				Sisilya == "" || Sisilya == null || Sisilyb == "" || Sisilyb == null) {
+					alert("Sisi sisinya jangan lupa diisi dulu yaa")
+				}
+			else {
+				//Rumus
+				var Luasly = (Number(D1)) * (Number(D2))/(Number(2));
+				var Kelly = (Number(2))*(Number(Sisilya)+Number(Sisilyb));
+				//Hasil
+				var Hasil = alert("Luas = "+Luasly);
+				var Kel = alert("Keliling = "+Kelly);
+				}
+		}
+	</script>
+	<!-- Button -->
+	<section>
+		<div>
+			<button onclick="Persegi()">
+				<p>Persegi<p>
+			</button>
+		</div>
+		<div>
+			<button onclick="PersegiPanjang()">
+				<p>Persegi Panjang<p>
+			</button>
+		</div>
+		<div>
+			<button onclick="Segitiga()">
+				<p>Segitiga<p>
+			</button>
+		</div>
+		<div>
+			<button onclick="Trapesium()">
+				<p>Trapesium<p>
+			</button>
+		</div>
+		<div>
+			<button onclick="Layang()">
+				<p>Layang-Layang<p>
+			</button>
+		</div>
+	</section>
+</body>
+</html>

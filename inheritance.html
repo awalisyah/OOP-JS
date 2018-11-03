@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Inheritance</title>
+    </head>
+    <body>
+        <script>
+            var Employee = function (name)
+            {
+                this.name = name;
+            }
+            Employee.prototype.getName = function ()
+            {
+                return this.name;
+            }
+            var PermanentEmployee = function (annualSalary)
+            {
+                this.annualSalary = annualSalary;
+            }
+            var employee = new Employee("Hallo Kawan Kawan");
+            PermanentEmployee.prototype = employee;
+            var pe = new PermanentEmployee(5000);
+            document.write(pe.getName());
+            alert(pe instanceof Employee);
+        </script>
+    </body>
+</html>

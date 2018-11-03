@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Konstruktor</title>
+</head>
+<body>
+
+<h2>Construktor</h2>
+
+<p id="demo"></p>
+
+	<script>
+		function Person(nama, sekolah, umur, kelas) {
+    	this.nama = nama;
+    	this.sekolah = sekolah;
+    	this.umur = umur;
+    	this.kelas = kelas;
+		}
+		var me = new Person("Awalisyah", "SMK Telkom Purwokerto", 16, "XI RPL 4");
+		// Display age
+		document.getElementById("demo").innerHTML =
+		"Aku itu " + me.nama + " " 
+		+ "Siswa "+ me.sekolah + " "
+		+ "Kelas : " + me.kelas; 
+	</script>
+
+</body>
+</html>
